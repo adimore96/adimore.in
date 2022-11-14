@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/logo1.png" type="image/x-icon">
+  <title>Adi's Profile</title>
+ 
+  <style>
+    body{
+      background-image: url("bg.jpg");
+      background-position: center;
+      background-size:cover ;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      scroll-behavior: smooth;
+    }
+
+    /* TYpe-Writer Animation*/
+    /* DEMO-SPECIFIC STYLES */
+.typewriter  h2 {
+  font-size: 25px;
+  color: #00ff11db;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid rgb(56, 235, 12); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1em; /* Adjust as needed */
+  animation: 
+  typing 3.5s steps(30, end),
+  blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 17% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(72, 255, 0) }
+}
+    /*End of TYpe-Writer Animation*/
+/*Desktop Devices*/
+@media screen and (min-width: 550px) {
+  .yttext{
+    margin-left: 50px;
+  }
+  
+}
+/*End of Desktop Devices*/
+
+/*Mobile Device*/
+    @media screen and (max-width: 612px) {
+    body {
+      background-image: url("bg.jpg") !important;
+      background-position: center;
+      background-size:cover ;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    @keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+.typewriter  h2 {
+  font-size: 20px;
+}
+    .logo {
+      width: 110px !important;
+      height: 100px !important;
+      display: block !important;
+      margin: auto !important;
+      border-radius: 100% !important;
+      border: 6px solid #585c58c2 !important;
+    }
+    .username{
+      font-size: 15px;
+    }
+    .socialmedia{
+      align-items: center;
+      justify-content: center;
+    }
+    .socialmedia img{
+      height: 25px !important;
+      width: 25px !important;
+    }
+
+    /*Youtube Div*/
+    .yt img{
+      height: 100px !important;
+      width: 170px !important;
+      margin: -10px !important;
+    } 
+    .yt h4{
+      font-size: 20px !important;
+    }.yt h6{
+      margin-left: -12px !important;
+      margin-right: 5px !important;
+      font-size: 11px !important;
+      text-align: start !important;
+    }
+    .yttext h6{
+    position: absolute !important;
+    white-space: nowrap;
+  }
+    
+
+       
+  }
+/*End of Mobile Device */
+
+/*Mobile Device extra */
+@media screen and (max-width: 380px) {
+    body {
+      background-image: url("bg.jpg") !important;
+      background-position: center;
+      background-size:cover ;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .ytlogo{
+    position: relative !important;
+    left: -60px;
+  }
+  .yttext{
+    position: absolute !important;
+    left: 190px !important;
+  }
+  .yttext h6{
+    position: absolute !important;
+    white-space: nowrap;
+  }
+  
+  }
+  /*End of mobile device*/
+
+    .logo {
+      width: 170px;
+      height: 160px;
+      display: block;
+      margin: auto;
+      border-radius: 100%;
+      border: 5px solid #00ff11db;
+      
+    }
+
+    .social {
+      width: 40px;
+      height: 40px;
+    }
+
+    .mail {
+      width: 35px;
+      height: 30px;
+
+    }
+
+    .sociall {
+      display: flex;
+      justify-content: center;
+
+    }
+    .banner{
+      max-width: 800px;
+      align-items: center;
+    }
+
+    .carousel{
+      max-width: 800px;
+    
+    }
+
+   /* .yt Main youtube Div*/
+    .yt{  
+      max-width: 800px;
+    }
+    .carousel-indicators{ 
+      visibility: hidden; 
+    } 
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&display=swap');
+    </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script>
+      function setNewImage(){
+      document.getElementById("yteffect").src="youtubered.png";
+      document.getElementById("myH2").style.color = "#ff0000";
+    }
+    function setOldImage(){
+      document.getElementById("yteffect").src="youtube.png" 
+      document.getElementById("myH2").style.color = "white";
+  
+    }
+     </script>
+</head>
+
+<body>
+
+
+  <div class="d-flex flex-row-reverse " style=" height: 50px;" >
+    <div class="p-2 me-4"><img style="width: 100px;" class="img-fluid "  src="indian-flag.png" alt="Aditya's Logo"></div>
+    
+  </div>
+
+ 
+  <img class="img-fluid mx-auto d-block logo" src="logo.jfif" alt="Aditya's Logo">
+  <h4 class="mt-2 text-white text-center username">@adityamore96</h4>
+  
+ 
+  <div class="sociall  mt-3 socialmedia">
+
+    <a href="https://www.instagram.com/adityamore96/" target="_blank">
+      <img class=" rounded ms-2 mt-1 mail" style="width: 38px; height:38px" src="insta.png">
+    </a>
+    <a href="https://www.instagram.com/adityamore96/" target="_blank">
+      <img class="rounded  social ms-3" src="twitter.png" >
+    </a>
+    <a href="https://www.youtube.com/channel/UCmy7mqGZdbKgk2ng4Gt450Q" target="_blank">
+      <img class="rounded ms-2 social mt-1 ms-3" style="width: 35px; height:32px" src="youtube.png">
+    </a>
+    
+    <a href = "mailto: adityamore201103" target="_blank">
+    <img class="rounded ms-2 mt-1 ms-3 mail " src="mail.png">
+  </a>
+  </div>
+
+  <div class="typewriter sociall mt-3">
+    <h2>Hi, I'm Aditya More</h2>
+ </div>
+
+  <!--Youtube Div-->
+
+  <a href="https://www.youtube.com/channel/UCmy7mqGZdbKgk2ng4Gt450Q" style="text-decoration: none;" target="_blank">
+
+     <div  onmouseover="setNewImage()" onmouseout="setOldImage()" class="sociall mt-4 yt  m-5  mx-auto w-75"  >
+    <div class="ytlogo m-4 ms-2">
+      <img  id="yteffect"   class="container img-fluid  ms-2  mt-1 ms-3" style="width: 210px; height:140px; position:static;" src="youtube.png">
+     <!-- <img class="rounded ms-2 social mt-1 ms-3" style="width: 280px; height:180px; position:static;" src="/youtubered.png"> --> 
+    </div>
+    <div  id="myH2" class="yttext " style=" align-self: center; color: aliceblue; font-family: 'Ibarra Real Nova', serif; font-size: 1.4rem;">
+     <h4 class="text-center" ><b>YouTube</b></h4>
+     <h6 class="tex">Code + Tech + Gaming</h6>
+    </div>
+  </div>
+  </a>
+   <!--End of Youtube Div-->
+
+  <!--Achivement text-->
+  <div class="sociall text-white text-center mt-4 ">
+    <h5>
+   My Achivement's  <img class="ms-2" src="arrow.png" style="height: 20px ;">
+    </h5>
+  </div>
+  <!--End of Achivement text-->
+ 
+  <!-- carousel -->
+  <div id="carouselExampleDark" class="border mx-auto d-block m-5 p-2 w-75 mt-2 carousel carousel-dark slide " data-bs-ride="carousel" style="min-height: 380px;" >
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active " data-bs-interval="1000">
+        <img src="1.png" class="img-thumbnail  d-block w-100 " alt="..." style=" max-height: 500px; max-width: 600px; margin:auto;">
+        <div class=" text-center text-light ">
+          <h6>First Price in Quiz Competition</h6>
+          <p style="font-size: 16px;">First Rank in Quiz Competition (Techon Vision 2021-22) Organized by <b>SVPM's ITE Malegaon BK .</b></p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img src="2.jpg" class="img-thumbnail d-block w-100" alt="..." style=" max-height: 500px; max-width: 600px; margin:auto;">
+        <div class="text-center text-light">
+          <h6>First Price in Quiz Competition</h6>
+          <p style="font-size: 15.2px;">First Rank in Quiz Competition (Techon Vision 2021-22) Organized by <b>SVPM's ITE Malegaon BK .</b></p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img src="3.jpg" class="img-thumbnail d-block w-100" alt="..." style=" max-height: 500px; max-width: 600px; margin:auto;">
+        <div class="text-center text-light">
+          <h6>Third price in Project Competition</h6>
+          <p style="font-size: 15px;">Third Rank in Project Competition Organized by <b>Dattakala Institute of Engineering.</b></p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img src="4.jpg" class="img-thumbnail d-block w-100" alt="..." style=" max-height: 500px; max-width: 600px; margin:auto;">
+        <div class="text-center text-light">
+          <h6 style="font-size: 14px;">Participate in Entrepreneurship Development</h6>
+          <p style="font-size: 15px;">Participate in Entrepreneurship Development Organized by <b>SVPM's ITE Malegaon BK .</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- End of carousel -->
+
+    
+     <!-- New Code-->
+     <div class="w-75 mx-auto mb-5 ">
+       <div class=" text-white text-center ">
+       <p>Website under </b>Development.</b></p><br>
+       
+    <div class="progress mb-4" style="  margin-top: -33px; ">
+    <div class=" progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+      <b> We are under Developement :(</b></div>
+    </div>
+  
+     </div>
+     </div>
+   
+    <div class="footer bg-dark bg-gradient text-white mx-auto  text-center " style="height: 30px; ">
+      <span class="align-middle">
+        Copyright © 2022 <a href="https://www.instagram.com/adityamore96/" target="_blank" class="text-success text-decoration-none "> @adityamore96.</a> 
+      </span>
+    </div>
+  <!--/ New Code-->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  
+</body>
+
+
+</html>

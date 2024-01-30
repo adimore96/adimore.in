@@ -129,8 +129,11 @@
     position: absolute !important;
     white-space: nowrap;
   }
-    .sociall p{
-      width:90vw !important;
+  .sociall p{
+    width:90vw !important;
+  }
+  .home {
+      min-height: 70vh !important;
     }
 
        
@@ -205,6 +208,11 @@
     .carousel-indicators{ 
       visibility: hidden; 
     } 
+
+    .home {
+      min-height: 100vh;
+      display: grid;
+    }
   </style>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&display=swap');
@@ -225,6 +233,8 @@
 </head>
 
 <body>
+<div class="home">
+
 
   <div class="bgimg">
     <img src="bg.jpg" alt="" srcset="">
@@ -236,35 +246,67 @@
     
   </div>
 
- 
+ <div class="home1">
+
+
   <img class="img-fluid mx-auto d-block logo" src="logo.jfif" alt="Aditya's Logo">
   <h4 class="mt-2 text-white text-center username">@adityamore96</h4>
   
  
-  <div class="sociall  mt-3 socialmedia">
+  <div class="sociall  socialmedia m-3 justify-content-center align-items-center ">
 
     <a href="https://www.instagram.com/adityamore96/" target="_blank">
-      <img class=" rounded ms-2 mt-1 mail" style="width: 38px; height:38px" src="insta.png">
+      <img class=" rounded ms-2 mt-1 mail" style="width: 40px; height:38px" src="insta.png">
+    </a>
+    <a href="https://www.linkedin.com/in/aditya-more-0aa018203/" target="_blank">
+      <img class="rounded ms-2 social mt-1 ms-3" style="width: 40px; height:38px" src="linkedin-icon.png">
     </a>
     <a href="https://github.com/adimore96/" target="_blank">
-      <img class="rounded  social ms-3" src="github_icon.png" >
+      <img class="rounded  social ms-3" style="width: 40px; height:37px" src="github_icon.png" >
     </a>
-    <a href="https://www.youtube.com/@adityamore96" target="_blank">
-      <img class="rounded ms-2 social mt-1 ms-3" style="width: 35px; height:32px" src="youtube.png">
-    </a>
+   
     
     <a href = "mailto: adityamore201103" target="_blank">
     <img class="rounded ms-2 mt-1 ms-3 mail " src="mail.png">
   </a>
   </div>
+  <div class="typewriter sociall  d-flex flex-column m-3">
 
-  <div class="typewriter sociall mt-3 d-flex flex-column  ">
     <h2>Hi, I'm Aditya More</h2>
+  </div>
+</div>
+  <div class="typewriter sociall  d-flex flex-column  ">
+    
     <hr class="text-white mx-auto w-75">
     <p class="text-white mx-auto mt-2 w-50"><b>Web-Developer:</b><br> Hi I'm Aditya More Currently pursuing B.E in Computer Engineering. <br/><br/><b>Skills:-</b><br/> <b>Frontend:-</b> HTML, CSS, JavaScript, Bootstrap, React JS. <br/><b>Database:-</b> MySQL, PL/SQL. <br/><b> Languages </b> C, C++, Javascript, Java, Python, PHP.
     </p>
+    <!-- <iframe src="Aditya's Resume.pdf" frameborder="1" style="height: 100%; width: 50vw;" class="mx-auto"></iframe> -->
+    <div class="resume mx-auto m-5">
+      <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">View Resume</button>
+
+ <!-- Modal -->
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog modal-dialog modal-dialog-centered" >
+    <div class="modal-content " >
+      <div class="modal-header" >
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Resume</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body mx-auto w-100" >
+        <iframe src="https://drive.google.com/file/d/1srDUF3B8oe_n7DbSGQ-_XiRqxVz-MjbY/preview" frameborder="1" style="height: 70vh; " class="w-100"></iframe>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+      <a href="https://drive.google.com/file/d/1srDUF3B8oe_n7DbSGQ-_XiRqxVz-MjbY/view" target="_blank"><button type="button" class="btn btn-secondary mx-2">Download Now</button></a>
+    </div>
     <hr class="text-white mx-auto w-75">
- </div>
+  </div>
+
+
+</div>
 
   <!--Youtube Div-->
 
@@ -294,7 +336,7 @@
   <!--End of Achivement text-->
  
   <!-- carousel -->
-  <div id="carouselExampleDark" class="border mx-auto d-block m-5 p-2 w-75 mt-2 carousel carousel-dark slide " data-bs-ride="carousel" style="min-height: 380px;" >
+  <div id="carouselExampleDark" class="border mx-auto d-block m-5 p-2 w-75 mt-2 carousel carousel-dark slide rounded " data-bs-ride="carousel" style="min-height: 380px;" >
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -323,7 +365,7 @@
           <p style="font-size: 15px;">Third Rank in Project Competition Organized by <b>Dattakala Institute of Engineering.</b></p>
         </div>
       </div>
-      <div class="carousel-item" data-bs-interval="2000">
+      <div class="carousel-item" >
         <img src="4.jpg" class="img-thumbnail d-block w-100" alt="..." style=" max-height: 500px; max-width: 600px; margin:auto;">
         <div class="text-center text-light">
           <h6 style="font-size: 14px;">Participate in Entrepreneurship Development</h6>
@@ -331,6 +373,14 @@
         </div>
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev" >
+      <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+      <span class="visually-hidden ">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
 <hr class="text-white mx-auto w-75">
@@ -375,33 +425,47 @@
           <a href="https://adimore96.github.io/TextUtils-React/" target="_blank" class="btn btn-primary mt-1">View Project</a>
         </div>
       </div>
-
-    
-
-    
-
-    
   </div>
     <!-- End of Projects-->
 
+    <hr class="text-white mx-auto mt-5 row w-75">
+
+    <!-- Contact me section -->
+    <div class=" text-white text-center  mx-auto mt-4 border w-75 rounded p-2 " style="background-color: rgba(0, 0, 0, 0.464);">
+      <h5 class="p-2 ">
+     Send Message  <img class="ms-2" src="arrow.png" style="height: 20px ;">
+      </h5>
+      <form action="/action_page.php" class=" ms-2" >
+        <input class="rounded col-sm-6  p-1 " type="email" required name="email" id="email" placeholder="Enter your email">
+        <div class="form-floating text-black col-sm-6 mx-auto  mt-2 mb-2">
+          <textarea required class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2" class="mx-auto">Message</label>
+        </div>
+        <input class="mb-2 col-sm-3 rounded btn btn-primary" type="submit" value="Submit">
+      </form>
+    </div>
+    <!-- End of Contact me section -->
+
+    <hr class="text-white mx-auto w-75">
+
     
      <!-- New Code-->
-     <div class="w-75 mx-auto mb-5 mt-5 ">
+     <!-- <div class="w-75 mx-auto mb-5 mt-5 ">
        <div class=" text-white text-center ">
        <p>Website under </b>Development.</b></p><br>
        
     <div class="progress mb-4 " style="  margin-top: -33px; ">
     <div class=" progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-      <b> Website under Developement :(</b></div>
+      <b style="font-weight: 300;"> Website under Developement :(</b></div>
     </div>
   
      </div>
-     </div>
+     </div> -->
    
-    <div class="footer bg-dark bg-gradient text-white mx-auto  text-center " style="height: 30px; ">
-      <span class="align-middle">
+    <div class="footer bg-dark bg-gradient text-white mx-auto d-flex align-items-center justify-content-center   text-center " style="height: 30px; padding: 25px;">
+      <div class="align-middle" >
         Copyright © 2022 <a href="https://www.instagram.com/adityamore96/" target="_blank" class="text-success text-decoration-none "> @adityamore96.</a> 
-      </span>
+      </div>
     </div>
   <!--/ New Code-->
 
